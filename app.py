@@ -3,7 +3,7 @@ from fastapi import FastAPI, Request
 import uvicorn
 
 # Summarizer modelini yükleyin
-summarizer = pipeline("text2text-generation", model="Yooniii/Article_summarizer")
+summarizer = pipeline("summarization", model="t5-small")
 
 # FastAPI instance oluşturun
 app = FastAPI()
